@@ -3,12 +3,37 @@
  */
 package com.crio.qcalc;
 
+import javax.naming.spi.DirStateFactory.Result;
+
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello mathematicians!";
+        
     }
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        StandardCalculator calc = new StandardCalculator();
+
+        StandardCalculator.getVersion();
+        
+        calc.operation1(23);
+        calc.printResult();
+
+        calc.add(100, 25);
+        calc.printResult();
+
+        calc.subtract(100, 25);
+        calc.printResult();
+
+        calc.multiply(100, 25);
+        calc.printResult();
+
+        calc.divide(100, 25);
+        calc.printResult();
+       // System.out.println("The result of your addition is "+ calc.getResult() + ".");
+       
+       calc.clearResult();
+       calc.printResult();
     }
 }
