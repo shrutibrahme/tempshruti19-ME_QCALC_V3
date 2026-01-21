@@ -50,5 +50,4 @@ public class App {
         System.out.println("Answer is: "+ result);
     }
       
-
 }
