@@ -11,29 +11,44 @@ public class App {
         
     }
 
+
+    /*code for standard calculator */
+    // public static void main(String[] args) {
+    //     System.out.println(new App().getGreeting());
+    //     StandardCalculator calc = new StandardCalculator();
+
+    //     StandardCalculator.getVersion();
+        
+    //     calc.operation1(23);
+    //     calc.printResult();
+
+    //     calc.add(100, 25);
+    //     calc.printResult();
+
+    //     calc.subtract(100, 25);
+    //     calc.printResult();
+
+    //     calc.multiply(100, 25);
+    //     calc.printResult();
+
+    //     calc.divide(100, 25);
+    //     calc.printResult();
+    //    // System.out.println("The result of your addition is "+ calc.getResult() + ".");
+       
+    //     calc.clearResult();
+    //     calc.printResult();
+
+    // }
+
+    /*code for scientific calc */
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        StandardCalculator calc = new StandardCalculator();
-
-        StandardCalculator.getVersion();
-        
-        calc.operation1(23);
-        calc.printResult();
-
-        calc.add(100, 25);
-        calc.printResult();
-
-        calc.subtract(100, 25);
-        calc.printResult();
-
-        calc.multiply(100, 25);
-        calc.printResult();
-
-        calc.divide(100, 25);
-        calc.printResult();
-       // System.out.println("The result of your addition is "+ calc.getResult() + ".");
-       
-       calc.clearResult();
-       calc.printResult();
+        ScientificCalculator calc1 = new ScientificCalculator();
+        // double result = calc1.powerOf(10, 1.5);
+        //int result = calc1.modulo(10,5 );
+        int result = calc1.modulo_double(5.6, 2.4);
+        System.out.println("Answer is: "+ result);
     }
+      
+
 }
